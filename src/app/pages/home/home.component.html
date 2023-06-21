@@ -1,0 +1,75 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="containerPrincipalHome">
+    <button
+      (click)="drawer.toggle()"
+      mat-mini-fab
+      class="openSideNavBtn"
+      color="primary"
+      aria-label="Example icon button with a menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <app-navbar></app-navbar>
+    <app-hero></app-hero>
+    <app-categorias-cta></app-categorias-cta>
+
+    <div class="containerPrincipalProdutos">
+      <div class="containerFiltragemProdutos">
+        <mat-chip-list>
+          <mat-chip
+            [ngClass]="{
+              chipSelecionado: isChipSelected(chip),
+              chipDeselecionado: !isChipSelected(chip)
+            }"
+            (click)="toggleSelection(chip)"
+            [selected]=""
+            *ngFor="let chip of chips"
+          >
+            {{ chip }}
+          </mat-chip>
+        </mat-chip-list>
+      </div>
+
+      <!-- produto -->
+      <div style="display: flex; gap: 30px">
+        <div class="containerItemProduto">
+          <div class="containerImagem">
+            <img src="" alt="" class="imagemProduto" />
+          </div>
+          <div class="containerInfo">
+            <div class="containerTitulo">Titulo Produto</div>
+            <div class="containerPreco">R$0,00</div>
+          </div>
+        </div>
+        <div class="containerItemProduto">
+          <div class="containerImagem">
+            <img src="" alt="" class="imagemProduto" />
+          </div>
+          <div class="containerInfo">
+            <div class="containerTitulo">Titulo Produto</div>
+            <div class="containerPreco">R$0,00</div>
+          </div>
+        </div>
+        <div class="containerItemProduto">
+          <div class="containerImagem">
+            <img src="" alt="" class="imagemProduto" />
+          </div>
+          <div class="containerInfo">
+            <div class="containerTitulo">Titulo Produto</div>
+            <div class="containerPreco">R$0,00</div>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto -->
+    </div>
+  </div>
+</mat-drawer-container>

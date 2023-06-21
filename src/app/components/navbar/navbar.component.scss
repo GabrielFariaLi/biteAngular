@@ -1,0 +1,47 @@
+.containerPrincipal {
+  background: transparent;
+  margin-top: 10px;
+  padding: 0 20%;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.wrapperPrincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerLogo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.containerMenusNavegacao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.itemMenuNavegacao {
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.containerBtnsAcoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnIrAoMenu {
+  width: fit-content;
+}
+
+.pecaAgoraBtn {
+  border-radius: 15px;
+  background-color: yellow;
+  color: black;
+}

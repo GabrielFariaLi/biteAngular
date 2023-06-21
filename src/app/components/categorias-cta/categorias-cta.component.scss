@@ -1,0 +1,53 @@
+.containerPrincipal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 100px;
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cardCategoria {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  background: white;
+  border-radius: 5px;
+
+  padding: 7px 14px;
+}
+
+.containerFotoCategoria {
+  width: 70px;
+  margin: auto 0;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid yellow;
+  background-color: black;
+}
+
+.containerInfoCategoria {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo {
+  font-family: monospace;
+  font-size: 28px;
+}
+.preco {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.btnCTA {
+  display: flex;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 15px;
+  background: yellowgreen;
+}
