@@ -1,0 +1,160 @@
+mat-dialog-container {
+  margin: 0;
+  padding: 0px !important;
+}
+
+.containerOverflow {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.containerPrincipal {
+  background: whitesmoke;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.tituloTotal {
+  font-family: var(--font-title);
+  font-size: 40px;
+}
+.valorTotal {
+  font-size: 30px;
+}
+.wrapperValorTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.containerValorTotal {
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: fit-content;
+}
+.containerListaItems {
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: fit-content;
+}
+.continerDetalhesPedido {
+  flex: 1;
+  width: 100%;
+}
+.descItem {
+  text-align: center;
+  max-width: 80%;
+}
+.tituloItem {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.wrapperListaItems {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.containerFotoItem {
+  width: 350px;
+  height: 350px;
+}
+.imagemItem {
+  width: 100%;
+  height: auto;
+}
+
+.containerFotoDetalhes {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerQuantidade {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2px 9px;
+}
+
+.containerEscolherAdicional {
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+}
+
+.tituloSecaoAdicional {
+  font-family: var(--font-title);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.containerFotoAcompanhamento {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background: black;
+}
+.containerTituloAcompanhamento {
+  font-weight: bold;
+  font-size: 12px;
+}
+.containerPrecoAcompanhamento {
+  font-size: 10px;
+}
+.containerAcompanhamentos {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.containerAcompanhamento {
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerIgredientes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerIgrediente {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.fotoIgrediente {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background: black;
+}
+.containerInfoIgrediente {
+}
+
+.containerEscolherIgredientes {
+  max-width: 350px;
+}
+.containerEscolha {
+  width: 100%;
+}

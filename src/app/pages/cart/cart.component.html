@@ -1,0 +1,142 @@
+<app-navbar></app-navbar>
+<div class="containerPrincipal">
+  <div class="containerValorTotal">
+    <div class="wrapperValorTotal">
+      <div class="d-flex align-items-center">
+        <div class="tituloTotal">Valor Total:</div>
+        <div class="valorTotal">R$ 00,00</div>
+      </div>
+      <div class="btnCta">Pagar</div>
+    </div>
+  </div>
+  <div class="containerListaItems">
+    <div *ngFor="let produto of produtosTeste" class="wrapperListaItems">
+      <div class="containerFotoDetalhes">
+        <div class="tituloItem">{{ produto.titulo }}</div>
+        <div class="mb-2 desc">Preço inicial: R${{ produto.price }}</div>
+        <div class="containerFotoItem">
+          <img class="imagemItem" src="assets/imgs/hamburgerCardItem.jpg" />
+        </div>
+        <div class="mt-2 descItem">
+          {{ produto.desc }}
+        </div>
+        <div class="mt-3 controladorQuantidade">
+          <div class="containerQuantidade">
+            <span (click)="number = number - 1">-</span>
+
+            <span>{{ number }}</span>
+            <span (click)="number = number + 1">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="containerEscolherAdicional">
+        <div class="containerEscolha">
+          <div class="tituloSecaoAdicional">Escolha um acompanhamento</div>
+          <div class="containerAcompanhamentos">
+            <div class="containerAcompanhamento">
+              <div class="containerFotoAcompanhamento"></div>
+              <div class="containerTituloAcompanhamento">titulo</div>
+              <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+            </div>
+            <div class="containerAcompanhamento">
+              <div class="containerFotoAcompanhamento"></div>
+              <div class="containerTituloAcompanhamento">titulo</div>
+              <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+            </div>
+          </div>
+        </div>
+        <div class="containerEscolha">
+          <div class="tituloSecaoAdicional">Escolha a bebida</div>
+          <div class="containerAcompanhamentos">
+            <div class="containerAcompanhamento">
+              <div class="containerFotoAcompanhamento"></div>
+              <div class="containerTituloAcompanhamento">titulo</div>
+              <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+            </div>
+            <div class="containerAcompanhamento">
+              <div class="containerFotoAcompanhamento"></div>
+              <div class="containerTituloAcompanhamento">titulo</div>
+              <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containerEscolheringredientes">
+        <div class="containerEscolha">
+          <div class="tituloSecaoAdicional">Personalizar seu produto</div>
+          <div class="containeringredientes">
+            <div class="containeringrediente">
+              <div class="d-flex">
+                <div class="fotoingrediente"></div>
+                <div class="ms-3 containerInfoingrediente">
+                  <div class="tituloIngrediente">Titulo</div>
+                  <div class="precoIngrediente">R$ 00,00</div>
+                </div>
+              </div>
+              <div class="ml-auto justify-self-end controladorQuantidade">
+                <div class="containerQuantidade">
+                  <span (click)="number = number - 1">-</span>
+
+                  <span>{{ number }}</span>
+                  <span (click)="number = number + 1">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="containeringrediente">
+              <div class="d-flex">
+                <div class="fotoingrediente"></div>
+                <div class="ms-3 containerInfoingrediente">
+                  <div class="tituloIngrediente">Titulo</div>
+                  <div class="precoIngrediente">R$ 00,00</div>
+                </div>
+              </div>
+              <div class="ml-auto justify-self-end controladorQuantidade">
+                <div class="containerQuantidade">
+                  <span (click)="number = number - 1">-</span>
+
+                  <span>{{ number }}</span>
+                  <span (click)="number = number + 1">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="containeringrediente">
+              <div class="d-flex">
+                <div class="fotoingrediente"></div>
+                <div class="ms-3 containerInfoingrediente">
+                  <div class="tituloIngrediente">Titulo</div>
+                  <div class="precoIngrediente">R$ 00,00</div>
+                </div>
+              </div>
+              <div class="ml-auto justify-self-end controladorQuantidade">
+                <div class="containerQuantidade">
+                  <span (click)="number = number - 1">-</span>
+
+                  <span>{{ number }}</span>
+                  <span (click)="number = number + 1">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="containeringrediente">
+              <div class="d-flex">
+                <div class="fotoingrediente"></div>
+                <div class="ms-3 containerInfoingrediente">
+                  <div class="tituloIngrediente">Titulo</div>
+                  <div class="precoIngrediente">R$ 00,00</div>
+                </div>
+              </div>
+              <div class="ml-auto justify-self-end controladorQuantidade">
+                <div class="containerQuantidade">
+                  <span (click)="number = number - 1">-</span>
+
+                  <span>{{ number }}</span>
+                  <span (click)="number = number + 1">+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

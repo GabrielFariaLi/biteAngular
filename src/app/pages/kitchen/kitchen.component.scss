@@ -1,0 +1,74 @@
+.containerPrincipal {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 100px;
+}
+.wrapper {
+  width: 100%;
+  padding: 0px 20%;
+  display: flex;
+  flex-direction: column;
+}
+.tituloPedidos {
+  font-family: var(--font-title);
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.containerPedidos {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pedidoItem {
+  width: fit-content;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.containerSenha {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+.senha {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--red-100);
+}
+.status {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.containerLuzStatus {
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 0, 0.25) 0px 54px 55px,
+    rgba(255, 255, 0, 0.12) 0px -12px 30px, rgba(255, 255, 0, 0.12) 0px 4px 6px,
+    rgba(255, 255, 0, 0.17) 0px 12px 13px, rgba(255, 255, 0, 0.09) 0px -3px 5px;
+}
+
+mat-dialog-container {
+  margin: 0;
+  padding: 0px !important;
+}

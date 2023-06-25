@@ -1,0 +1,124 @@
+<app-navbar></app-navbar>
+<div class="containerPrincipal">
+  <div class="containerListaItems">
+    <div *ngFor="let produto of produtosTeste" class="wrapperListaItems">
+      <div class="mb-5 headerOrder">
+        <div class="infoID">
+          <div class="orderId">Order #1</div>
+        </div>
+        <!--   <div class="completePorcentage">
+          <div class="subTitulo">Completo</div>
+          <div class="porcentagemNumber">40%</div>
+          <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        </div> -->
+        <div class="estimativaEntrega">
+          <div class="subTitulo">Estimativa de entrega</div>
+          <div class="estimativaNumber">45 min</div>
+        </div>
+      </div>
+      <div class="my-5 stepperStatus">
+        <div class="containerElipse">
+          <div class="containerLabelElipse">Pendente</div>
+        </div>
+        <div
+          [ngStyle]="{ opacity: true ? '0.5' : '1' }"
+          class="containerLinha"
+        ></div>
+        <div
+          [ngStyle]="{ opacity: true ? '0.5' : '1' }"
+          class="containerElipse"
+        >
+          <div class="containerLabelElipse">Cozinhando</div>
+        </div>
+        <div
+          [ngStyle]="{ opacity: true ? '0.5' : '1' }"
+          class="containerLinha"
+        ></div>
+        <div
+          [ngStyle]="{ opacity: true ? '0.5' : '1' }"
+          class="containerElipse"
+        >
+          <div class="containerLabelElipse">Finalizado</div>
+        </div>
+      </div>
+      <div class="containerColunas">
+        <div class="containerFotoDetalhes">
+          <div class="tituloItem">Hamburguin x1</div>
+          <div class="containerFotoItem">
+            <img class="imagemItem" src="assets/imgs/hamburgerCardItem.jpg" />
+          </div>
+        </div>
+        <div class="containerEscolherAdicional">
+          <div class="containerEscolha">
+            <div class="tituloSecaoAdicional">Acompanhamento escolhido</div>
+            <div class="containerAcompanhamentos">
+              <div class="containerAcompanhamento">
+                <div class="containerFotoAcompanhamento"></div>
+                <div class="containerTituloAcompanhamento">titulo</div>
+                <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+              </div>
+            </div>
+          </div>
+          <div class="containerEscolha">
+            <div class="tituloSecaoAdicional">Bebida escolhida</div>
+            <div class="containerAcompanhamentos">
+              <div class="containerAcompanhamento">
+                <div class="containerFotoAcompanhamento"></div>
+                <div class="containerTituloAcompanhamento">titulo</div>
+                <div class="containerPrecoAcompanhamento">R$ 00,00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerEscolheringredientes">
+          <div class="containerEscolha">
+            <div class="pe-5 tituloSecaoAdicional">ingredientes</div>
+            <div class="containeringredientes">
+              <div class="containeringrediente">
+                <div class="d-flex align-items-center">
+                  <div class="fotoingrediente"></div>
+                  <div class="ms-3 containerInfoingrediente">
+                    <div class="tituloIngrediente">Titulo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="containeringrediente">
+                <div class="d-flex align-items-center">
+                  <div class="fotoingrediente"></div>
+                  <div class="ms-3 containerInfoingrediente">
+                    <div class="tituloIngrediente">Titulo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="containeringrediente">
+                <div class="d-flex align-items-center">
+                  <div class="fotoingrediente"></div>
+                  <div class="ms-3 containerInfoingrediente">
+                    <div class="tituloIngrediente">Titulo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="containeringrediente">
+                <div class="d-flex align-items-center">
+                  <div class="fotoingrediente"></div>
+                  <div class="ms-3 containerInfoingrediente">
+                    <div class="tituloIngrediente">Titulo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="containeringrediente">
+                <div class="d-flex align-items-center">
+                  <div class="fotoingrediente"></div>
+                  <div class="ms-3 containerInfoingrediente">
+                    <div class="tituloIngrediente">Titulo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
