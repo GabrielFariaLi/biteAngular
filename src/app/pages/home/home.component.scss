@@ -16,10 +16,11 @@
 }
 
 .openSideNavBtn {
-  position: absolute;
+  position: fixed;
   top: 20px;
-  left: 20px;
-  z-index: 99999;
+  right: 20px;
+  z-index: 3;
+  display: none;
 }
 
 .containerPrincipalProdutos {
@@ -70,4 +71,35 @@
 }
 .containerPreco {
   font-size: 16px;
+}
+
+/* Extra small devices (portrait phones) */
+@media only screen and (max-width: 575.98px) {
+  /* Styles for extra small devices */
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for extra large devices */
+}
+@media only screen and (max-width: 900px) {
+  /* Styles for extra large devices */
+  .openSideNavBtn {
+    display: block;
+  }
 }

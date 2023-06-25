@@ -1,4 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+:root {
+  --font-body: "Roboto", sans-serif; /*body font*/
+  --font-title: "Fira Mono", monospace;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  /* -------------------------------------------------------------------------- */
+  /*                                   colors                                   */
+  /* -------------------------------------------------------------------------- */
+  --brand-100: #f4d35e;
+  --contrast-100: #ee964b;
+  --contrast-200: #f4d35e;
+  --red-100: #f95738;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                     fim                                    */
+  /* -------------------------------------------------------------------------- */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+div,
+p {
+  font-family: var(--font-body);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+mat-dialog-container {
+  margin: 0;
+  padding: 0px !important;
+}
+
+.btnCta {
+  width: fit-content;
+  border-radius: 45px !important;
+  background: var(--contrast-100);
+  color: white;
+  font-family: var(--font-title);
+  padding: 10px 45px;
+  box-shadow: none !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btnCta:hover {
+  // color: var(--brand-100);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,42 @@
+<div class="containerPrincipalProdutos">
+  <div class="containerFiltragemProdutos">
+    <mat-chip-list>
+      <mat-chip
+        [ngClass]="{
+          chipSelecionado: isChipSelected(chip),
+          chipDeselecionado: !isChipSelected(chip)
+        }"
+        (click)="toggleSelection(chip)"
+        [selected]=""
+        *ngFor="let chip of chips"
+      >
+        {{ chip }}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+
+  <!-- produto -->
+  <div
+    class="mt-3 mb-5 w-100"
+    style="display: flex; gap: 30px; flex-wrap: wrap"
+  >
+    <div *ngFor="let produto of produtosTeste" class="containerItemProduto">
+      <div class="containerImagem">
+        <img [src]="produto.img" alt="" class="imagemProduto" />
+      </div>
+      <div class="containerInfo">
+        <div class="containerTitulo">{{ produto.titulo }}</div>
+        <div class="containerDesc">
+          <p>
+            {{ produto.desc }}
+          </p>
+        </div>
+        <div class="containerPreco">R${{ produto.price }}</div>
+        <div class="containerAddCart">
+          <mat-icon class="addCartIcon">shopping_cart</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fim produto -->
+</div>

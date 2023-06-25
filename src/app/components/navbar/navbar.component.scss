@@ -1,9 +1,12 @@
 .containerPrincipal {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
   margin-top: 10px;
-  padding: 0 20%;
-  position: sticky;
+  padding: 10px 20%;
+  width: 100%;
+  position: absolute;
   top: 0;
+  backdrop-filter: blur(8px); /* Adjust the blur strength as needed */
+  z-index: 2;
   left: 0;
 }
 
@@ -15,25 +18,49 @@
 
 .containerLogo {
   font-size: 30px;
+  color: white;
+  margin: 0px;
   font-weight: bold;
-  font-family: monospace;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.containerLogo:hover {
+  color: var(--brand-100);
 }
 .containerMenusNavegacao {
+  margin-left: 20%;
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
 .itemMenuNavegacao {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
+  color: white;
   cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.itemMenuNavegacao:hover {
+  color: var(--brand-100);
 }
 
 .containerBtnsAcoes {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: white;
+  font-size: 10px;
+}
+.containerBtnsAcoes > .mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .btnIrAoMenu {
@@ -42,6 +69,46 @@
 
 .pecaAgoraBtn {
   border-radius: 15px;
-  background-color: yellow;
+  background-color: var(--contrast-100);
   color: black;
+}
+/* Extra small devices (portrait phones) */
+@media only screen and (max-width: 575.98px) {
+  /* Styles for extra small devices */
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (max-width: 1200px) {
+  /* Styles for extra large devices */
+  .containerPrincipal {
+    padding: 10px 10%;
+  }
+}
+/* Extra large devices (large desktops) */
+@media only screen and (max-width: 900px) {
+  /* Styles for extra large devices */
+  .containerPrincipal {
+    padding: 10px 5%;
+  }
+  .containerMenusNavegacao {
+    display: none;
+  }
+  .containerBtnsAcoes {
+    display: none;
+  }
 }

@@ -1,15 +1,48 @@
 <div class="containerPrincipal">
   <div class="wrapperPrincipal">
-    <div class="containerLogo">Bite</div>
+    <h1 [routerLink]="['/home']" class="containerLogo">Bite</h1>
     <div class="containerMenusNavegacao">
-      <div class="itemMenuNavegacao">Home</div>
-      <div class="itemMenuNavegacao">Menu</div>
-      <div class="itemMenuNavegacao">Carrinho</div>
+      <div
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        class="itemMenuNavegacao"
+      >
+        Home
+      </div>
+      <div
+        [routerLink]="['/menu']"
+        routerLinkActive="router-link-active"
+        class="itemMenuNavegacao"
+      >
+        Menu
+      </div>
+      <div
+        [routerLink]="['/cart']"
+        routerLinkActive="router-link-active"
+        class="itemMenuNavegacao"
+      >
+        Carrinho
+      </div>
+      <div
+        [routerLink]="['/kitchen']"
+        routerLinkActive="router-link-active"
+        class="itemMenuNavegacao"
+      >
+        Cozinha
+      </div>
     </div>
     <div class="containerBtnsAcoes">
-      <mat-icon>shopping_cart</mat-icon>
+      <mat-icon [matMenuTriggerFor]="menu" routerLinkActive="router-link-active"
+        >person</mat-icon
+      ><mat-menu #menu="matMenu">
+        <button [routerLink]="['/myOrders']" mat-menu-item>Meus Pedidos</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <mat-icon [routerLink]="['/cart']" routerLinkActive="router-link-active"
+        >shopping_cart</mat-icon
+      >
       <mat-icon>search</mat-icon>
-      <button class="pecaAgoraBtn" mat-raised-button>Peça agora</button>
+      <button class="btnCta" mat-raised-button><span>Peça agora</span></button>
     </div>
   </div>
 </div>
